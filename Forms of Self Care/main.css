@@ -1,0 +1,99 @@
+	
+	body {
+			margin: 0;
+		}
+
+		h1 {
+			margin: 0px;
+		}
+
+	#main-content {
+			text-align: center;
+			background-color: rgba(255,255,255,0.8);
+			box-shadow: 0px 0px 10px #000;
+			padding: 40px;
+			width: 900px;
+			margin: auto;
+		}
+
+	#main-content, #navbar {
+		margin-left: auto;
+		margin-right: auto;
+		width: 900px;
+	}
+
+	#navbar ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#navbar ul li {
+		background-color: white;
+		width: 450px;
+		text-align: center;
+	}
+
+	#navbar > ul {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	#navbar a {
+		display: block;
+		text-decoration: none;
+		color: black;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	#navbar li:hover {
+		background-color: #ffe9ec;
+	}
+
+	#navbar ul ul {
+		display: none;
+		position: absolute;
+	}
+
+	#navbar li:hover > ul {
+		display: block;
+	}
+
+	#nav {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-color: white;
+		z-index: 1;
+	}
+
+/*	#nav {
+		box-shadow: 0px 2px 5px #CCC;
+	}
+
+	#navbar {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+
+	#nav a { 
+		text-decoration: none;
+		width: 850px;
+		height: 50px;
+		line-height: 50px;
+		display: block;
+		text-align: center;
+		color: #333;
+		border-bottom: 2px solid #FFF;
+	}
+
+	#navbar > a:hover, #nav .active { 
+		color: #900;
+		border-bottom: 2px solid #900;
+	}*/
+

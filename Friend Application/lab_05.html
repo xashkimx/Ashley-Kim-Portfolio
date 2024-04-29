@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRIEND POLL</title>
+	<style>
+
+		body {
+			margin: 0px;
+		}
+
+		h1 {
+			margin-top: 0;
+		}
+
+		#title {
+			background-color: rgba(255,255,255,0.8);
+			box-shadow: 0px 0px 10px #000;
+			margin-bottom: 30px;
+			padding: 30px 0px 20px;
+			color: pink;
+		}
+
+		#main-content { 
+			text-align: center;
+			margin-top: 0px;
+			background-image: url("img/background.png");
+			background-size: cover;
+			background-position: center;
+			height: 2000px;
+
+		 }
+
+
+		form {
+			background-color: rgba(255,255,255,0.8);
+			box-shadow: 0px 0px 10px #000;
+			width: 700px;
+			margin: 60px auto 0px auto;
+			padding: 30px 10px 30px;
+
+		}
+
+		.form-row{
+			margin-bottom: 20px;
+			margin-top: 20px;
+/*			display: flex;*/
+		}
+
+		.form-column {
+			margin-bottom: 10px;
+			margin-top: 10px;
+	/*		width: 150px;*/
+		}
+
+		input[type="checkbox"] {
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+ 
+
+
+	</style>
+</head>
+
+<body>
+<div id="main-content">
+
+	<div id="title">
+		<h1>Ashley's Friend Application</h1>
+	</div>
+
+	<form action="thanks.html">
+		<em>Basic Information</em>
+
+		<div class="form-row">
+				<div class="form-column">
+					<label for="name-id">What's your name?*</label> 
+				</div>
+				<input id="name-id" type="text" placeholder="Ashley Kim">
+			</div>	
+
+			<div class="form-row">
+				<div class="form-column">
+					<label for="email-id">Email:*</label>
+				</div>
+				<input id="email-id" type="email" placeholder="kimae@usc.edu">
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label>How old are you?*</label></div>
+				<label><input type="radio" name="student">0-17</label>
+				<label><input type="radio" name="student">18-30</label>
+				<label><input type="radio" name="student">31-50</label>
+				<label><input type="radio" name="student">51+</label>
+	
+			</div>
+
+			<em>Let me get to know you!</em>
+
+			<div class="form-row">
+
+				<div class="form-column"><label for="message-id">Pitch yourself to me in 2-3 sentences.</label></div>
+				<textarea id="message-id" placeholder="Be creative!"></textarea>
+
+			</div>
+
+			<div class="form-row">
+					<div class="form-column"><label>Are you interested in any of the following:</label></div>
+					<label><input type="checkbox">Clothing/Fashion/Shopping</label>
+					<label><input type="checkbox">Music/Concerts</label>
+					<label><input type="checkbox">Reading</label>
+					<label><input type="checkbox">Journaling/Bullet Journaling</label>
+					<label><input type="checkbox">Rock Climbing</label>
+					<label><input type="checkbox">Trying New Things</label>
+					<label><input type="checkbox">FOOD</label>
+			</div>
+
+			<div class="form-row">
+				<div class="form-column"><label for="subject-id">Personality Type:</label></div>
+				<select id="subject-id">
+					<option>INFJ</option>
+					<option>INTJ</option>
+					<option>INTJ</option>
+					<option>ISFJ</option>
+					<option>INTP</option>
+					<option>INFP</option>
+					<option>ISTP</option>
+					<option>ISFP</option>
+					<option>ESFP</option>
+					<option>ESFJ</option>
+					<option>ESTJ</option>
+					<option>ENTJ</option>
+					<option>ESTP</option>
+					<option>ENFJ</option>
+					<option>ENTP</option>
+					<option>ENFP</option>
+				</select>
+
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-column"><label for="hobbies-id">What are your hobbies/interest?</label></div>
+				<textarea id="hobbies-id" placeholder="Anything you spend your time doing!"></textarea>
+
+			</div>
+
+			<em>Now for some deeper questions</em>
+
+			<div class="form-row">
+
+				<div class="form-column"><label for="qualities-id">What are important qualities you look for in a friend? </label></div>
+				<textarea id="qualities-id" placeholder="Message Here"></textarea>
+
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-column"><label for="biggest-id">What is your biggest flaw/strength?</label></div>
+				<textarea id="biggest-id" placeholder="Message Here"></textarea>
+
+			</div>
+
+			<div class="form-row">
+					<div class="form-column"><label>I accept the terms and conditions of being Ashley's friend.</label></div>
+					<label><input type="checkbox"></label>
+			</div>
+
+
+			<div class="form-row">
+
+				<button id="submit-button" type="submit">I'm done!</button>
+				<button type="reset">Clear</button>
+
+			</div>
+
+	</form>
+
+</div> <!-- all content -->
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Work</title>
+	<meta name="description" content="Explore Ashley's work! Writing samples, fashion projects, etc.">
+	<link rel="stylesheet" href="main.css">
+	<style>
+
+		#categories p {
+			font-size: 3em;
+			margin-left: 10px;
+		}
+
+		#categories a {
+			text-decoration: none;
+			color: black;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="tabs">
+			<div id="tab-one">
+				<a href="final_project.html" class="active">ASHLEY KIM</a>
+			</div> <!-- first half of nav bar --> 
+			<div id="tab-two">
+				<a href="work.html" class="active">WORK</a>
+				<a href="about.html" class="active">ABOUT</a>
+			</div> <!-- second half of nav bar --> 
+		</div> <!-- nav tabs -->
+	</div>	<!-- entire navbar -->
+
+	<div id="categories">
+
+		<div id="Writing">
+			<a id="w" href="writing.html" class="active"><p>WRITINGwRITINGWRITINGWRITINGWRITINGWRITING</p></a>
+			
+		</div> <!-- writing --> 
+
+		<div id="Fashion">
+			<a id="f" href="fashion.html" class="active"><p>FASHIONfASHIONFASHIONFASHIONFASHIONFASHION</p></a>
+		</div> <!-- fashion -->
+
+		<div id="Graphic">
+			<a id="g" href="graphic.html" class="active"><p>GRAPHICgRAPHICGRAPHICGRAPHICGRAPHICGRAPHIC</p></a>
+		</div> <!-- graphics --> 
+
+	</div> <!-- work categories -->
+
+	<script>
+  		function changeBackgroundColor(color) {
+    		document.body.style.backgroundColor = color;
+  		}
+
+  		function changeLinkTextColor(linkID, color) {
+    		document.getElementById(linkID).style.color = color;
+  		}
+
+  		var categoryLinks = document.querySelectorAll('#categories a');
+
+  		categoryLinks.forEach(function(link) {
+    		link.addEventListener('mouseover', function() {
+      var color = link.id === 'w' ? 'black' : link.id === 'f' ? 'pink' : 'blue';
+      changeBackgroundColor(color);
+
+      changeLinkTextColor(link.id, 'white');});
+    	link.addEventListener('mouseout', function() {
+     		changeBackgroundColor('');
+
+      changeLinkTextColor(link.id, 'black');
+    });
+  });
+</script>
+
+
+</body>
+</html>

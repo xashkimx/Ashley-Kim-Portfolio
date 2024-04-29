@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Collection of Cool Things</title>
+	<style>
+
+		body {
+			 margin: 0;
+			 padding: 0;
+			 background-image: url("img/background.avif");
+			background-size: cover;
+			background-position: center;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 20px;
+		}
+
+		.thumbnail {
+			width: 300px;
+			height: auto;
+			opacity: 1;
+			transition: opacity 0.3s;
+		}
+
+		.thumbnail:hover {
+			opacity: 0.7;
+		}
+
+		.thumbnail + p {
+		 	text-align: center;
+		 	visibility: hidden;
+		 	font-style: italic;
+
+		 }
+
+		.thumbnail:hover + p {
+		 	visibility: visible;
+		 }
+
+		#first-section, #second-section, #third-section {
+			display: flex;
+			margin: auto;
+		}
+
+		#first-section .thumbnail {
+			width: 300px;
+			height: 400px;
+			padding-top: 20px;
+		}
+
+		#second-section .thumbnail {
+			width: 300px;
+			height: 350px;
+		}
+
+
+		#third-section .thumbnail {
+			width: 300px;
+			height: 550px;
+		}
+
+
+		#title {
+			background-color: rgba(255, 182, 193, 0.5);
+			text-align: center;
+			margin: 0;
+			width: auto;
+		}
+
+		#gallery {
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			align-items: center;
+			width: 1000px;
+			background-color: rgba(255,255,255,0.8);
+			box-shadow: 0px 0px 5px #000;
+
+		}
+
+		.img-container {
+			border: none;
+		}
+
+		.selected {
+			border: 2px solid red;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="title">
+		<h1>Collection of Cool Things</h1>
+	</div> <!-- title -->
+
+	<div id="gallery">
+
+		<div id="first-section">
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/bag.jpg" alt="Clip Bag">
+				<p>Clip Bag</p>
+			</div> <!-- 1st image --> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/katemoss.jpg" alt="Kate Moss">
+				<p>Kate Moss in an Alex Perry Dress</p>
+			</div> <!-- 2nd image --> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/cher.jpg" alt="Cher">
+				<p>Cher in a Bob Mackie Dress</p>
+			</div> <!-- 3rd image --> 
+
+		</div> <!-- first image section --> 	
+
+		<div id="second-section"> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/bracelet.jpg" alt="Bracelet">
+				<p>Chunky Bracelets and Rings</p>
+			</div> <!-- 4th image --> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/nails.jpg" alt="Nails">
+				<p>Cool Nails</p>
+			</div> <!-- 5th image --> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/back.jpg" alt="Dress">
+				<p>Beaded Back</p>
+			</div> <!-- 6th image --> 
+
+		</div> <!-- second image section --> 
+
+		<div id="third-section">
+		
+			<div class="img-container">
+				<img class="thumbnail" src="img/outfit.jpg" alt="Outfit">
+				<p>Cool Outfit</p>
+			</div> <!-- 7th image --> 
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/pants.jpg" alt="pants">
+				<p>Keychain Pants</p>
+			</div> <!-- 8th image -->
+
+			<div class="img-container">
+				<img class="thumbnail" src="img/light.jpg" alt="Light">
+				<p>Flower Lights</p>
+			</div> <!-- 9th image --> 
+
+		</div> <!-- third image section --> 
+
+	</div> <!-- #gallery -->
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+    $('#gallery .img-container img').click(function() {
+        $('#gallery .img-container').removeClass('selected');
+        $(this).parent('.img-container').addClass('selected');
+    });
+});
+
+
+	</script>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

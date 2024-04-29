@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+	<title>Gallery</title>
+	<link rel="stylesheet" href="main.css">
+	<style>
+
+		#header {
+			background-image: url("img/bg2.avif");
+			text-align: center;
+			height: 300px;
+			background-size: cover;
+			background-position: center;
+			font-size: 1.5em;
+			line-height: 300px;
+			text-shadow: 0px 0px 10px #000;
+			color: white;
+		}
+
+		.thumbnail {
+			border: 1px solid black;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+		}
+
+		#main-content {
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		#block1 {
+			width: 389px;
+			height: 400px;
+		}
+
+		#block2, #block3, #block4, #block5 {
+			width: 193px;
+			height: 189px;
+		}
+
+		#first-section {
+			display: flex;
+		}
+
+		#first-top, #first-bottom {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#right-section {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#second-section {
+			display: flex;
+		}
+
+		#block6 {
+			width: 819px;
+			height: 300px;
+		}
+
+		#third-section {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#block7, #block8, #block9, #block10 {
+			width: 188px;
+			height: 188px;
+		}
+
+		.caption {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			text-align: center;
+	/*		padding-top: 100px;*/
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #FFF;
+			visibility: hidden;
+		}
+
+		#block1 .caption {
+			padding-top: 200px;
+		}
+
+		.thumbnail {
+			position: relative;
+		}
+
+		.thumbnail:hover > .caption {
+			visibility: visible;
+		}
+
+		#right-section .caption {
+			padding-top: 94.5px;
+		}
+
+		#block6 .caption {
+			padding-top: 150px;
+		}
+
+		#third-section .caption {
+			padding-top: 94px;
+		}
+	
+
+	</style>
+
+</head>
+
+<body>
+	<div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- header --> 
+
+	<div id="nav">
+			<div id="navbar">
+				<ul>
+					<li>
+						 <a href="assignment_06.html" class="active">Home</a>
+						<ul>
+							<li><a href="#journaling" class="active">Journaling</a>
+							<li><a href="#Exercise" class="active">Exercise</a>
+							<li><a href="#Cleaning" class="active">Reset Your Space</a>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</div> <!-- nav tabs -->
+		</div> <!-- navigation bar --> 
+
+	<div id="main-content">
+
+		<div id="first-section">
+
+			<div id="block1" class="thumbnail">
+
+				<img src="galleryimg/1.jpg" alt="Friendship"> 
+				<div class="caption">Friendship</div>
+
+			</div> <!-- 1 --> 
+			<div id="right-section">
+				<div id="first-top">
+					<div id="block2" class="thumbnail">
+
+						<img src="galleryimg/2.jpg" alt="Vinyl Love"> 
+						<div class="caption">Vinyl Love</div>
+
+					</div> <!-- 2 --> 
+
+					<div id="block3" class="thumbnail">
+
+						<img src="galleryimg/3.jpg" alt="Teenage Love"> 
+						<div class="caption">Teenage Love</div>
+						
+					</div> <!-- 3 -->
+
+				</div> <!-- top section -->  
+
+				<div id="first-bottom">
+					<div id="block4" class="thumbnail">
+
+						<img src="galleryimg/4.jpg" alt="Rockstar Girlfriend"> 
+						<div class="caption">Rockstar Girlfriend Love</div>
+						
+					</div> <!-- 4 --> 
+
+					<div id="block5" class="thumbnail">
+
+						<img src="galleryimg/5.jpg" alt="Bread Love"> 
+						<div class="caption">Bread Love</div>
+						
+					</div> <!-- 5 --> 
+				</div> <!-- bottom section --> 
+			</div> <!-- right section --> 
+
+		</div> <!-- first section --> 
+
+		<div id="second-section">
+
+			<div id="block6" class="thumbnail">
+
+				<img src="galleryimg/6.jpg" alt="Couple Walking Side by Side in the City"> 
+				<div class="caption">Couple Walking in the City</div>
+				
+			</div> <!-- 6 --> 
+
+		</div> <!-- second section --> 
+
+		<div id="third-section">
+
+			<div id="block7" class="thumbnail">
+
+					<img src="galleryimg/7.jpg" alt="Pretty Exterior"> 
+					<div class="caption">Exterior</div>
+				
+			</div> <!-- 7 --> 
+
+			<div id="block8" class="thumbnail">
+
+					<img src="galleryimg/8.jpg" alt="Sun Room"> 
+					<div class="caption">Sun Room</div>
+
+				
+			</div> <!-- 8 --> 
+
+			<div id="block9" class="thumbnail">
+
+					<img src="galleryimg/9.jpg" alt="Kitchen"> 
+					<div class="caption">Kitchen</div>
+
+				
+			</div> <!-- 9 --> 
+
+			<div id="block10" class="thumbnail">
+
+					<img src="galleryimg/10.jpg" alt="Garden"> 
+					<div class="caption">Garden</div>
+
+				
+			</div> <!-- 10 --> 
+
+		</div> <!-- third section -->
+
+
+	</div>
+
+
+</body>
+
+
+</html>

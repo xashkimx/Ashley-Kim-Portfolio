@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<meta name="description" content="Discover who Ashley Kim is. Contact her for any inquiries!">
+	<link rel="stylesheet" href="main.css">
+	<style>
+		#bottom-half {
+		height: 50%;
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		#top-half {
+		background-color: #FF0000;
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		color: white;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	#about-me, #about {
+		color: white;
+		font-size: 2.5em;
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: center;
+	}
+
+	#about {
+		font-size: 1.5em;
+		margin: 10px;
+	}
+
+	#contact-me {
+		color: #FF0000;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	form {
+			background-color: rgba(255,255,255,0.8);
+			box-shadow: 0px 0px 10px #000;
+			width: 450px;
+			height: auto;
+			margin-top: 10px;
+			padding-left: 10px;
+
+		}
+
+	.form-row{
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+	.form-column {
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+	@media (max-width: 700px) {
+		#about {
+			font-size: 1.3em;
+		}
+
+	}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="navbar">
+		<div id="tabs">
+			<div id="tab-one">
+				<a href="final_project.html" class="active" >ASHLEY KIM</a>
+			</div> <!-- first half of nav bar --> 
+			<div id="tab-two">
+				<a href="work.html" class="active">WORK</a>
+				<a href="about.html" class="active" >ABOUT</a>
+			</div> <!-- second half of nav bar --> 
+		</div> <!-- nav tabs -->
+	</div>	<!-- entire navbar -->
+
+	<div id="top-half">
+
+		<h2>about me</h2>
+
+		<p id="about-me">sTUDENTdAUGHTERfRIENDcREATIVE</p>
+
+		<em id="about">I aspire to work in the fashion and technology industries. Leveraging my education as a Business Administration student at USC and my experiences as an intern at a software development company, I hope to create meaningful impact through innovation and collaboration. I strive to never be stagnant, learning and experiencing something new, interesting, or cool every single day.</em>
+
+
+	</div> <!-- top half --> 
+
+	<div id="bottom-half">
+
+		<form action="final_project.html">
+			<p id="contact-me">Contact Me</p>
+
+			<div class="form-row">
+				<div class="form-column">
+					<label for="name-id">What's your name?</label> 
+				</div>
+				<input id="name-id" type="text" placeholder="Full Name">
+			</div>	
+
+			<div class="form-row">
+				<div class="form-column">
+					<label for="email-id">Email:</label>
+				</div>
+				<input id="email-id" type="email" placeholder="kimae@usc.edu">
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-column"><label for="message-id">Message</label></div>
+				<textarea id="message-id" placeholder="Message Here"></textarea>
+
+			</div>
+
+			<div class="form-row">
+
+				<button id="submit-button" type="submit">Send</button>
+				<button type="reset">Clear</button>
+
+			</div>
+
+	</form>
+		
+
+	</div> <!-- bottom half --> 
+
+</body>
+
+</html>
